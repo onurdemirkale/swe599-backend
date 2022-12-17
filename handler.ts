@@ -4,7 +4,7 @@ async function main(event: any) {
   console.log("availability zones 👉", process.env.AVAILABILITY_ZONES);
 
   return {
-    body: JSON.stringify({ message: "SUCCESS!" }),
+    body: JSON.stringify({ message: "SUCCESS!", testSuccess: true }),
     statusCode: 200,
   };
 }
