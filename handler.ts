@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 async function main(event: any) {
-  console.log("region 👉", process.env.REGION);
-  console.log("availability zones 👉", process.env.AVAILABILITY_ZONES);
+  console.log("Region: ", process.env.REGION);
+  console.log("Availability zones: ", process.env.AVAILABILITY_ZONES);
 
   return {
     body: JSON.stringify({ message: "SUCCESS!", testSuccess: true }),
