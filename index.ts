@@ -1,6 +1,6 @@
 import { Context, APIGatewayProxyCallback, APIGatewayEvent } from "aws-lambda";
 
-export const lambdaHandler = (
+export const main = (
   event: APIGatewayEvent,
   context: Context,
   callback: APIGatewayProxyCallback
@@ -10,7 +10,7 @@ export const lambdaHandler = (
   callback(null, {
     statusCode: 200,
     body: JSON.stringify({
-      message: "hello world",
+      message: "Pipeline Updated!",
     }),
   });
 };
