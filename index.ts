@@ -10,7 +10,7 @@ export const main = (
   callback(null, {
     statusCode: 200,
     body: JSON.stringify({
-      message: "Pipeline Updated!",
+      message: "Changes Deployed!",
     }),
   });
 };
